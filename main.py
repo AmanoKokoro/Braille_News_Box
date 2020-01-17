@@ -15,18 +15,21 @@ def main():
     getcharacter = GetCharacter()
     #print('ニュースの数:' + len(newsget.sources['sources']))
 
-    while (1):
+    while True:
         for x in range(len(newsget.sources['sources'])):
             print(x + 1, '個目のニュース')
-            input('続けるには キー を入力してください。')
-            news = newsget.headline_get(x)
-            #print('from main news:', news)
-            asciinews = getcharacter.getasciichar(news)
-            #print('from main asciinews:', asciinews)
 
-            for y in asciinews:
-                input() #'続けるには キー を入力してください。')
-                gpio.change_character(y)
+            if gpio.pin_input() == 0:
+            #input('続けるには キー を入力してください。')
+                news = newsget.headline_get(x)
+                #print('from main news:', news)
+                asciinews = getcharacter.getasciichar(news)
+                #print('from main asciinews:', asciinews)
+
+                for y in asciinews:
+                    if gpio.pin_input() == 0:
+                    #input()
+                        gpio.change_character(y)
 
         newsget.refresh()
 
