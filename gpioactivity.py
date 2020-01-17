@@ -50,12 +50,13 @@ class GpioActivity:
         self.solenoid_gpio = gpio_number
         self.switch_gpio = 6
         self.status = 1
-        self.old_status = 1
+        self.old_status = 0
         
 
     def gpio_setup(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.solenoid_gpio, GPIO.OUT)
+        GPIO.setup(self.switch_gpio, GPIO.IN, pull_up_down = GPIO.PUD_UP)
         for i, gpio in enumerate(self.solenoid_gpio):   #gpio is pi number
             GPIO.output(gpio, 0)
 
@@ -66,12 +67,9 @@ class GpioActivity:
             GPIO.output(gpio, self.solenoid_list[cnum][i])
 
     def pin_input(self):
-        self.status = GPIO.input(self.switch_gpio)
-        if self.status == 0 and self.old_status == 1:
-            self.old_status = self.status
-            return self.status
+        GPIO.wait_for_edge(self.switch_gpio, GPIO.FALLING)
+        return 1
 
-        return self.old_status
 
     def destroy(self):
         for i, closepin in enumrate(self.solenoid_gpio):
