@@ -48,7 +48,7 @@ class GpioActivity:
                                [0, 0, 1, 0, 0, 0],
                                [0, 0, 0, 0, 0, 0]]
         self.solenoid_gpio = gpio_number
-        self.switch_gpio = 6
+        self.switch_gpio = 13
         self.status = 1
         self.old_status = 0
         
