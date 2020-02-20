@@ -16,7 +16,6 @@ class NewsGet:
     def headline_get(self, headline_num):
         headline_news = self.sources['sources'][headline_num]['description']
         self.newsdata = list(headline_news)
-        #print('NewsGet', self.newsdata)
         return self.newsdata
 
     #news data re_get

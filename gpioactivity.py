@@ -17,6 +17,7 @@ solenoids map
 
 
 class GpioActivity:
+    #initialize
     def __init__(self, gpio_number):
         self.solenoid_list = [	[1, 0, 0, 0, 0, 0],
                                [1, 0, 1, 0, 0, 0],
@@ -54,6 +55,7 @@ class GpioActivity:
         self.gpio_setup()
         
 
+    #gpiosetup and clean
     def gpio_setup(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.solenoid_gpio, GPIO.OUT)
@@ -61,17 +63,17 @@ class GpioActivity:
         for i, gpio in enumerate(self.solenoid_gpio):   #gpio is pi number
             GPIO.output(gpio, 0)
 
-
+    #change output character
     def change_character(self, cnum):
         print("Characterchr : ", chr(cnum + 65))
         for i, gpio in enumerate(self.solenoid_gpio):   #gpio is pi number
             GPIO.output(gpio, self.solenoid_list[cnum][i])
-
+    #read switch
     def pin_input(self):
         GPIO.wait_for_edge(self.switch_gpio, GPIO.FALLING)
         return 1
 
-
+    #all clear
     def destroy(self):
         for i, closepin in enumrate(self.solenoid_gpio):
             GPIO.output(closepin, 0)

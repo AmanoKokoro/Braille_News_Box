@@ -6,7 +6,7 @@ import newsget
 
 class GetCharacter:
 
-    initialize#
+    #initialize
     def __init__(self):
         self.c = 0
         self.asciilist = []

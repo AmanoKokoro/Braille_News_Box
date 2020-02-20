@@ -16,15 +16,17 @@ def main():
     #print('ニュースの数:' + len(newsget.sources['sources']))
 
     while True:
+        #Go to Next News
         for x in range(len(newsget.sources['sources'])):
             print(x + 1, '個目のニュース')
 
             if gpio.pin_input() == 1:
-                #News data get
+                #get News data
                 news = newsget.headline_get(x)
-                #news data convert ascii
+                #News data convert ascii
                 asciinews = getcharacter.getasciichar(news)
 
+                #Go to NextCharacter
                 for y in asciinews:
                     if gpio.pin_input() == 1: #ボタン入力待ち
                         gpio.change_character(y) #文字切り替え
