@@ -9,7 +9,7 @@ class NewsGet:
     #initialize
     def __init__(self):
         self.newsapi = NewsApiClient(
-            api_key='e6de3e49b7a14e77b7a6a789c36bc7db')
+            api_key='Your API Key')
         self.sources = self.newsapi.get_sources(language='en')
 
     #news_data get
