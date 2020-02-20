@@ -19,13 +19,9 @@
 $ pip install newsapi-python 
 ```
 
-<<<<<<< HEAD
 [展示資料：https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing](https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing)
 <a href="https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing"><img src="https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/DSC_1284.JPG"></a>
 
 ##Hardware
-![回路図](https://github.com/AmanoKokoro?Braille_News_Box/blob/master/images/Screenshot.png)
-=======
-[展示資料：https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing](https://drive.google.com/file/d/1p5ISp69bYGrMOaIc692ZfRzVhlF7MJKG/view?usp=sharing)
-<a href="https://drive.google.com/file/d/1p5ISp69bYGrMOaIc692ZfRzVhlF7MJKG/view?usp=sharing"><img src="https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/DSC_1284.JPG"></a>
->>>>>>> 112133bd02cdfbbeef7cb6beec736bdac03ee54e
+![回路図](https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/Screenshot.png)
+
