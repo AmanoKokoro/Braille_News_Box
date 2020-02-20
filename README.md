@@ -3,7 +3,7 @@ Braille News Box
 ![Badge Status](https://services-as-a-ci)
 
 ## Description
-**このリポジトリは2020年のHAL東京就職作品プレゼンテーション 
+**このリポジトリは2020年のHAL東京就職作品プレゼンテーション  
 先端ロボット開発学科３年 RO15 のプロジェクトのソースです！**
 
 
