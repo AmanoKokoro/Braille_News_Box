@@ -6,9 +6,9 @@ import RPi.GPIO as GPIO
 
 
 def main():
-    #pinを与える
+    #pin open
     gpio = GpioActivity((22, 25, 27, 24, 17, 23))
-    #pinのプルアップ
+    #pinsetup
     gpio.gpio_setup()
     #NewsAPIを初期化
     newsget = NewsGet()
@@ -20,16 +20,14 @@ def main():
             print(x + 1, '個目のニュース')
 
             if gpio.pin_input() == 1:
-            #input('続けるには キー を入力してください。')
+                #News data get
                 news = newsget.headline_get(x)
-                #print('from main news:', news)
+                #news data convert ascii
                 asciinews = getcharacter.getasciichar(news)
-                #print('from main asciinews:', asciinews)
 
                 for y in asciinews:
-                    if gpio.pin_input() == 1:
-                    #input()
-                        gpio.change_character(y)
+                    if gpio.pin_input() == 1: #ボタン入力待ち
+                        gpio.change_character(y) #文字切り替え
 
         newsget.refresh()
 

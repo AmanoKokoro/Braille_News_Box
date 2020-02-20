@@ -51,6 +51,7 @@ class GpioActivity:
         self.switch_gpio = 13
         self.status = 1
         self.old_status = 0
+        self.gpio_setup()
         
 
     def gpio_setup(self):

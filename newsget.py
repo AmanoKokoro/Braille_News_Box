@@ -6,19 +6,20 @@ from newsapi import NewsApiClient
 
 class NewsGet:
 
+    #initialize
     def __init__(self):
         self.newsapi = NewsApiClient(
             api_key='e6de3e49b7a14e77b7a6a789c36bc7db')
         self.sources = self.newsapi.get_sources(language='en')
 
-
+    #news_data get
     def headline_get(self, headline_num):
         headline_news = self.sources['sources'][headline_num]['description']
         self.newsdata = list(headline_news)
         #print('NewsGet', self.newsdata)
         return self.newsdata
 
-
+    #news data re_get
     def refresh(self):
         self.sources = self.newsapi.get_sources(language='en')
 
