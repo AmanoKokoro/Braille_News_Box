@@ -18,8 +18,8 @@
 ```
 $ pip install newsapi-python 
 ```
-
-[展示資料：https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing](https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing)
+展示資料：
+[https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing](https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing)
 <a href="https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing"><img src="https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/DSC_1284.JPG"></a>
 
 ## Hardware
