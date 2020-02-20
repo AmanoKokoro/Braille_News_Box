@@ -1,6 +1,6 @@
 # Braille News Box
 ====
-![Badge Status](https://services-as-a-ci)
+
 
 ## Description
 **このリポジトリは2020年のHAL東京就職作品プレゼンテーション  
