@@ -3,9 +3,14 @@ Braille News Box
 ![Badge Status](https://services-as-a-ci)
 
 ## Description
-**This project is exhibit at the HALTokyo event held in 2020！！**
+**このリポジトリは2020年のHAL東京就職作品プレゼンテーション 先端ロボット開発学科３年 RO15 のプロジェクトのソースです！**
 
-If you build this project, you need to do this command:
+
+## Features
+- GPIO操作、ニュース取得、文字列変換の機能はデータごとにクラス分割され、それぞれの保有するデータを引き渡すコードになっています 。
+- test.pyを実行すればパソコンのターミナル上で動作の様子を見れます！
+
+※注意：このプログラムを動作させる前に、newsapiライブラリを以下のコマンドでインストールしてください
 ```
-pip install newsapi-python 
+$ pip install newsapi-python 
 ```
