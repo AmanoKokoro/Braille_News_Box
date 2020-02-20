@@ -1,4 +1,4 @@
-Braille News Box
+# Braille News Box
 ====
 ![Badge Status](https://services-as-a-ci)
 
@@ -14,14 +14,10 @@ Braille News Box
 [NewsAPIホームページ：https://newsapi.org/](https://newsapi.org/)
 
 ※注意：このプログラムを動作させる前に、newsapiライブラリを以下のコマンドでインストールしてください！！！
+
 ```
 $ pip install newsapi-python 
 ```
 
-
-
-
 [展示資料：https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing](https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing)
-
-
-![イメージ](https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/DSC_1284.JPG)
+<a href="https://drive.google.com/file/d/1Yh4ISeyyGFyDeo5El03vtq14w5iQo52K/view?usp=sharing"><img src="https://github.com/AmanoKokoro/Braille_News_Box/blob/master/images/DSC_1284.JPG"></a>
