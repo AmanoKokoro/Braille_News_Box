@@ -11,6 +11,8 @@ Braille News Box
 - GPIO操作、ニュース取得、文字列変換の機能はデータごとにクラス分割され、それぞれの保有するデータを引き渡すコードになっています 。
 - test.pyを実行すればパソコンのターミナル上で動作の様子を見れます！
 - newsget.py 12行目''内を取得したNewsAPIのAPIキーに置き換えてください。
+[NewsAPIホームページ：https://newsapi.org/](https://newsapi.org/)
+
 ※注意：このプログラムを動作させる前に、newsapiライブラリを以下のコマンドでインストールしてください！！！
 ```
 $ pip install newsapi-python 
