@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from newsapi import NewsApiClient
-y
-import newsget
+import getnews
 
 
 class GetCharacter:
@@ -39,7 +38,7 @@ class GetCharacter:
 
 
 if __name__ == '__main__':
-    n = newsget.NewsGet()
+    n = getnews.GetNews()
     getnews = GetCharacter()
 
     news = n.headline_get(1)

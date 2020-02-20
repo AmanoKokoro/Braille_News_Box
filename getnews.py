@@ -4,7 +4,7 @@ import json
 from newsapi import NewsApiClient
 
 
-class NewsGet:
+class GetNews:
 
     #initialize
     def __init__(self):
@@ -27,7 +27,7 @@ class NewsGet:
 
 
 if __name__ == '__main__':
-    n = NewsGet()
+    n = GetNews()
 
     print(n.headline_get(0))
     print(n.headline_get(1))

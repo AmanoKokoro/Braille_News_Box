@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from newsget import NewsGet
+from getnews import GetNews
 from gpioactivity import GpioActivity
 from getcharacter import GetCharacter
 import RPi.GPIO as GPIO
@@ -11,7 +11,7 @@ def main():
     #pinsetup
     gpio.gpio_setup()
     #NewsAPIを初期化
-    newsget = NewsGet()
+    newsget = GetNews()
     getcharacter = GetCharacter()
     #print('ニュースの数:' + len(newsget.sources['sources']))
 
